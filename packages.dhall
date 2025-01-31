@@ -372,7 +372,7 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-types"
-        , version = "v4.0.0"
+        , version = "2166745949fd501acc6b46dac4ec9a6d517bbc95"
         }
       , cardano-message-signing =
         { dependencies =
@@ -473,6 +473,60 @@ let additions =
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-mote-testplan"
         , version = "v1.0.0"
+        }
+      , cardano-provider =
+        { dependencies =
+          [ "aeson"
+          , "aff"
+          , "affjax"
+          , "argonaut-codecs"
+          , "arraybuffer-types"
+          , "arrays"
+          , "bifunctors"
+          , "bytearrays"
+          , "cardano-plutus-data-schema"
+          , "cardano-serialization-lib"
+          , "cardano-types"
+          , "console"
+          , "control"
+          , "datetime"
+          , "effect"
+          , "either"
+          , "encoding"
+          , "exceptions"
+          , "foldable-traversable"
+          , "foreign-object"
+          , "integers"
+          , "js-bigints"
+          , "lattice"
+          , "lists"
+          , "literals"
+          , "maybe"
+          , "monad-logger"
+          , "mote"
+          , "mote-testplan"
+          , "newtype"
+          , "nonempty"
+          , "nullable"
+          , "ordered-collections"
+          , "partial"
+          , "prelude"
+          , "profunctor"
+          , "profunctor-lenses"
+          , "quickcheck"
+          , "rationals"
+          , "record"
+          , "safe-coerce"
+          , "spec"
+          , "these"
+          , "tuples"
+          , "typelevel-prelude"
+          , "uint"
+          , "unfoldable"
+          , "unsafe-coerce"
+          ]
+        , repo = "https://github.com/mlabs-haskell/purescript-cardano-provider"
+        , version = "9e9150b2949b2f985dd3c3d9dbb5d26bbe9a19f6"
         }
       }
 
