@@ -371,7 +371,7 @@ let additions =
           , "unfoldable"
           , "unsafe-coerce"
           ]
-        , repo = "https://github.com/KristianBalaj/purescript-cardano-types.git"
+        , repo = "https://github.com/mlabs-haskell/purescript-cardano-types.git"
         , version = "2166745949fd501acc6b46dac4ec9a6d517bbc95"
         }
       , cardano-message-signing =
@@ -526,7 +526,7 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-provider"
-        , version = "9e9150b2949b2f985dd3c3d9dbb5d26bbe9a19f6"
+        , version = "9fd190b2260f0fcfba91592c46da2fa93f31f488"
         }
       }
 
