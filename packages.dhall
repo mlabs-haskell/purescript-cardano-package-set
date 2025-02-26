@@ -618,6 +618,37 @@ let additions =
             "https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider"
         , version = "cfe55b9f20ff2dcc94ded7841adb0816dd15ec82"
         }
+      , cardano-ogmios-mempool =
+        { dependencies =
+          [ "aeson"
+          , "aff"
+          , "argonaut-codecs"
+          , "arrays"
+          , "bifunctors"
+          , "bytearrays"
+          , "cardano-kupmios-provider"
+          , "cardano-provider"
+          , "cardano-types"
+          , "control"
+          , "effect"
+          , "either"
+          , "exceptions"
+          , "foldable-traversable"
+          , "foreign-object"
+          , "lists"
+          , "maybe"
+          , "monad-logger"
+          , "newtype"
+          , "ordered-collections"
+          , "prelude"
+          , "record"
+          , "refs"
+          , "transformers"
+          ]
+        , repo =
+            "https://github.com/mlabs-haskell/purescript-cardano-ogmios-mempool"
+        , version = "2cbeec3b6051fbc67fc65cf77a1acd1a2a030e52"
+        }
       }
 
-in (upstream // additions)
+in  upstream // additions
