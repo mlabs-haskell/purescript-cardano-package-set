@@ -372,7 +372,7 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-types.git"
-        , version = "v4.1.0"
+        , version = "v4.2.0"
         }
       , cardano-message-signing =
         { dependencies =
@@ -526,6 +526,46 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-provider"
+        , version = "v1.1.0"
+        }
+      , cardano-blockfrost-provider =
+        { dependencies =
+          [ "aeson"
+          , "aff"
+          , "affjax"
+          , "arrays"
+          , "bifunctors"
+          , "bignumber"
+          , "bytearrays"
+          , "cardano-provider"
+          , "cardano-serialization-lib"
+          , "cardano-types"
+          , "control"
+          , "datetime"
+          , "effect"
+          , "either"
+          , "exceptions"
+          , "foldable-traversable"
+          , "foreign-object"
+          , "heterogeneous"
+          , "http-methods"
+          , "js-bigints"
+          , "js-date"
+          , "lists"
+          , "maybe"
+          , "media-types"
+          , "monad-logger"
+          , "newtype"
+          , "numbers"
+          , "ordered-collections"
+          , "parallel"
+          , "prelude"
+          , "strings"
+          , "transformers"
+          , "tuples"
+          , "uint"
+          ]
+        , repo = "https://github.com/mlabs-haskell/purescript-cardano-blockfrost-provider"
         , version = "v1.0.0"
         }
       }
