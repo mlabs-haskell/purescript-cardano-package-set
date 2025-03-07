@@ -565,9 +565,90 @@ let additions =
           , "tuples"
           , "uint"
           ]
-        , repo = "https://github.com/mlabs-haskell/purescript-cardano-blockfrost-provider"
+        , repo =
+            "https://github.com/mlabs-haskell/purescript-cardano-blockfrost-provider"
         , version = "v1.0.0"
+        }
+      , cardano-kupmios-provider =
+        { dependencies =
+          [ "aeson"
+          , "aff"
+          , "aff-promise"
+          , "affjax"
+          , "arrays"
+          , "bifunctors"
+          , "bytearrays"
+          , "cardano-key-wallet"
+          , "cardano-provider"
+          , "cardano-serialization-lib"
+          , "cardano-types"
+          , "console"
+          , "control"
+          , "datetime"
+          , "effect"
+          , "either"
+          , "exceptions"
+          , "foldable-traversable"
+          , "foreign-object"
+          , "formatters"
+          , "http-methods"
+          , "integers"
+          , "js-bigints"
+          , "js-date"
+          , "lists"
+          , "maybe"
+          , "monad-logger"
+          , "newtype"
+          , "ordered-collections"
+          , "parallel"
+          , "partial"
+          , "prelude"
+          , "profunctor-lenses"
+          , "record"
+          , "strings"
+          , "stringutils"
+          , "tailrec"
+          , "these"
+          , "transformers"
+          , "tuples"
+          , "uint"
+          , "untagged-union"
+          ]
+        , repo =
+            "https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider"
+        , version = "cfe55b9f20ff2dcc94ded7841adb0816dd15ec82"
+        }
+      , cardano-ogmios-mempool =
+        { dependencies =
+          [ "aeson"
+          , "aff"
+          , "argonaut-codecs"
+          , "arrays"
+          , "bifunctors"
+          , "bytearrays"
+          , "cardano-kupmios-provider"
+          , "cardano-provider"
+          , "cardano-types"
+          , "control"
+          , "effect"
+          , "either"
+          , "exceptions"
+          , "foldable-traversable"
+          , "foreign-object"
+          , "lists"
+          , "maybe"
+          , "monad-logger"
+          , "newtype"
+          , "ordered-collections"
+          , "prelude"
+          , "record"
+          , "refs"
+          , "transformers"
+          ]
+        , repo =
+            "https://github.com/mlabs-haskell/purescript-cardano-ogmios-mempool"
+        , version = "2cbeec3b6051fbc67fc65cf77a1acd1a2a030e52"
         }
       }
 
-in (upstream // additions)
+in  upstream // additions
