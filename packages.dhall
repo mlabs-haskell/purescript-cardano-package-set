@@ -616,7 +616,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider"
-        , version = "cfe55b9f20ff2dcc94ded7841adb0816dd15ec82"
+        , version = "v1.0.0"
         }
       , cardano-ogmios-mempool =
         { dependencies =
@@ -647,7 +647,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-ogmios-mempool"
-        , version = "2cbeec3b6051fbc67fc65cf77a1acd1a2a030e52"
+        , version = "v1.0.0"
         }
       }
 
