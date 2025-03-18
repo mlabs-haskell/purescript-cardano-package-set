@@ -216,6 +216,31 @@ let additions =
             "https://github.com/mlabs-haskell/purescript-cardano-serialization-lib"
         , version = "v3.0.0"
         }
+      , cardano-data-lite =
+        { dependencies =
+          [ "aeson"
+          , "aff"
+          , "argonaut"
+          , "bifunctors"
+          , "bytearrays"
+          , "effect"
+          , "either"
+          , "enums"
+          , "maybe"
+          , "nullable"
+          , "ordered-collections"
+          , "partial"
+          , "prelude"
+          , "profunctor"
+          , "spec"
+          , "transformers"
+          , "tuples"
+          , "unsafe-coerce"
+          ]
+        , repo =
+            "https://github.com/mlabs-haskell/purescript-cardano-data-lite"
+        , version = "350d36bed5338298cb5317ebe2dad9532811ea0d"
+        }
       , cardano-plutus-data-schema =
         { dependencies = [ "prelude" ]
         , repo =
