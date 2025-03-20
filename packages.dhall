@@ -191,31 +191,6 @@ let additions =
         , repo = "https://github.com/mlabs-haskell/purescript-bytearrays"
         , version = "v1.0.0"
         }
-      , cardano-serialization-lib =
-        { dependencies =
-          [ "aeson"
-          , "aff"
-          , "argonaut"
-          , "bifunctors"
-          , "bytearrays"
-          , "effect"
-          , "either"
-          , "enums"
-          , "maybe"
-          , "nullable"
-          , "ordered-collections"
-          , "partial"
-          , "prelude"
-          , "profunctor"
-          , "spec"
-          , "transformers"
-          , "tuples"
-          , "unsafe-coerce"
-          ]
-        , repo =
-            "https://github.com/mlabs-haskell/purescript-cardano-serialization-lib"
-        , version = "v3.0.0"
-        }
       , cardano-data-lite =
         { dependencies =
           [ "aeson"
@@ -227,6 +202,7 @@ let additions =
           , "either"
           , "enums"
           , "maybe"
+          , "newtype"
           , "nullable"
           , "ordered-collections"
           , "partial"
@@ -237,9 +213,8 @@ let additions =
           , "tuples"
           , "unsafe-coerce"
           ]
-        , repo =
-            "https://github.com/mlabs-haskell/purescript-cardano-data-lite"
-        , version = "350d36bed5338298cb5317ebe2dad9532811ea0d"
+        , repo = "https://github.com/mlabs-haskell/purescript-cardano-data-lite"
+        , version = "070a1a502472211853099c2566a7e9100a7b1a61"
         }
       , cardano-plutus-data-schema =
         { dependencies = [ "prelude" ]
@@ -250,32 +225,45 @@ let additions =
       , plutus-types =
         { dependencies =
           [ "aeson"
+          , "aff"
           , "argonaut-codecs"
           , "arrays"
           , "bifunctors"
           , "bytearrays"
+          , "cardano-data-lite"
           , "cardano-plutus-data-schema"
           , "cardano-types"
-          , "console"
+          , "control"
           , "effect"
           , "either"
+          , "encoding"
+          , "exceptions"
           , "foldable-traversable"
           , "gen"
           , "js-bigints"
           , "lattice"
           , "maybe"
           , "monad-logger"
+          , "mote"
+          , "mote-testplan"
           , "newtype"
+          , "nonempty"
           , "ordered-collections"
           , "partial"
           , "prelude"
           , "profunctor-lenses"
           , "quickcheck"
+          , "quickcheck-combinators"
+          , "spec"
+          , "spec-quickcheck"
+          , "strings"
           , "these"
+          , "transformers"
           , "tuples"
+          , "typelevel-prelude"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-plutus-types"
-        , version = "v1.0.1"
+        , version = "b2ecd7f7804c4af38a031f66582a54cf5b667e9a"
         }
       , cip30-mock =
         { dependencies =
@@ -327,8 +315,9 @@ let additions =
       , uplc-apply-args =
         { dependencies =
           [ "aff"
+          , "bifunctors"
           , "bytearrays"
-          , "cardano-serialization-lib"
+          , "cardano-data-lite"
           , "cardano-types"
           , "effect"
           , "either"
@@ -339,6 +328,7 @@ let additions =
           , "maybe"
           , "mote"
           , "mote-testplan"
+          , "newtype"
           , "partial"
           , "prelude"
           , "profunctor"
@@ -347,7 +337,7 @@ let additions =
           , "tuples"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-uplc-apply-args"
-        , version = "v1.0.0"
+        , version = "bec9cb629b652406dfac95b94cf384dce1cead32"
         }
       , cardano-types =
         { dependencies =
@@ -358,7 +348,7 @@ let additions =
           , "bifunctors"
           , "bytearrays"
           , "cardano-plutus-data-schema"
-          , "cardano-serialization-lib"
+          , "cardano-data-lite"
           , "control"
           , "datetime"
           , "effect"
@@ -397,7 +387,7 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-types.git"
-        , version = "v4.2.0"
+        , version = "5fe759a6e3d77450b3998e46fbbc17deafc69613"
         }
       , cardano-message-signing =
         { dependencies =
@@ -414,7 +404,7 @@ let additions =
         }
       , cardano-hd-wallet =
         { dependencies =
-          [ "cardano-serialization-lib"
+          [ "cardano-data-lite"
           , "cardano-types"
           , "console"
           , "effect"
@@ -423,62 +413,36 @@ let additions =
           , "uint"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-hd-wallet"
-        , version = "cc1073ddf8bce72407ef6671e3decb59f422e304"
+        , version = "b3d1a8859d120bcdd5ba768efa6e5916a05a7400"
         }
       , cardano-transaction-builder =
         { dependencies =
-          [ "aeson"
-          , "aff"
-          , "arraybuffer-types"
+          [ "aff"
           , "arrays"
           , "bifunctors"
           , "bytearrays"
-          , "cardano-plutus-data-schema"
-          , "cardano-serialization-lib"
           , "cardano-types"
-          , "console"
-          , "control"
           , "datetime"
           , "effect"
           , "either"
-          , "encoding"
-          , "exceptions"
           , "foldable-traversable"
-          , "foreign-object"
-          , "integers"
-          , "js-bigints"
-          , "lattice"
-          , "lists"
-          , "literals"
           , "maybe"
-          , "monad-logger"
           , "mote"
           , "mote-testplan"
           , "newtype"
-          , "nonempty"
-          , "nullable"
           , "ordered-collections"
           , "partial"
           , "prelude"
-          , "profunctor"
           , "profunctor-lenses"
-          , "quickcheck"
-          , "rationals"
           , "record"
-          , "safe-coerce"
           , "spec"
-          , "strings"
-          , "these"
           , "transformers"
           , "tuples"
-          , "typelevel-prelude"
           , "uint"
-          , "unfoldable"
-          , "unsafe-coerce"
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-transaction-builder"
-        , version = "v2.0.0"
+        , version = "d6894849ca110e65c73df94c987d54a0ffb5ebfd"
         }
       , mote-testplan =
         { dependencies =
@@ -503,55 +467,22 @@ let additions =
         { dependencies =
           [ "aeson"
           , "aff"
+          , "aff-promise"
           , "affjax"
           , "argonaut-codecs"
-          , "arraybuffer-types"
-          , "arrays"
-          , "bifunctors"
-          , "bytearrays"
-          , "cardano-plutus-data-schema"
-          , "cardano-serialization-lib"
           , "cardano-types"
           , "console"
-          , "control"
-          , "datetime"
           , "effect"
           , "either"
-          , "encoding"
-          , "exceptions"
-          , "foldable-traversable"
-          , "foreign-object"
-          , "integers"
-          , "js-bigints"
-          , "lattice"
-          , "lists"
-          , "literals"
           , "maybe"
-          , "monad-logger"
-          , "mote"
-          , "mote-testplan"
           , "newtype"
-          , "nonempty"
-          , "nullable"
           , "ordered-collections"
-          , "partial"
           , "prelude"
-          , "profunctor"
-          , "profunctor-lenses"
-          , "quickcheck"
-          , "rationals"
-          , "record"
-          , "safe-coerce"
-          , "spec"
-          , "these"
-          , "tuples"
-          , "typelevel-prelude"
+          , "strings"
           , "uint"
-          , "unfoldable"
-          , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-provider"
-        , version = "v1.1.0"
+        , version = "90e68dca60fbc14c6abfa9291a20b865f927338c"
         }
       , cardano-blockfrost-provider =
         { dependencies =
@@ -563,7 +494,7 @@ let additions =
           , "bignumber"
           , "bytearrays"
           , "cardano-provider"
-          , "cardano-serialization-lib"
+          , "cardano-data-lite"
           , "cardano-types"
           , "control"
           , "datetime"
@@ -592,20 +523,19 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-blockfrost-provider"
-        , version = "v1.0.0"
+        , version = "8e8bfd14370b4af4507702a6220bc6a9213532ef"
         }
       , cardano-kupmios-provider =
         { dependencies =
           [ "aeson"
           , "aff"
-          , "aff-promise"
           , "affjax"
           , "arrays"
           , "bifunctors"
           , "bytearrays"
           , "cardano-key-wallet"
           , "cardano-provider"
-          , "cardano-serialization-lib"
+          , "cardano-data-lite"
           , "cardano-types"
           , "console"
           , "control"
@@ -641,7 +571,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider"
-        , version = "v1.0.0"
+        , version = "d08fc22de67ab9d24e9d20a3545228a5aaa5807f"
         }
       , cardano-ogmios-mempool =
         { dependencies =
