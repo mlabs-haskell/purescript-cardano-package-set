@@ -263,7 +263,7 @@ let additions =
           , "typelevel-prelude"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-plutus-types"
-        , version = "b2ecd7f7804c4af38a031f66582a54cf5b667e9a"
+        , version = "v2.0.0"
         }
       , cip30-mock =
         { dependencies =
@@ -315,7 +315,6 @@ let additions =
       , uplc-apply-args =
         { dependencies =
           [ "aff"
-          , "bifunctors"
           , "bytearrays"
           , "cardano-data-lite"
           , "cardano-types"
@@ -328,7 +327,6 @@ let additions =
           , "maybe"
           , "mote"
           , "mote-testplan"
-          , "newtype"
           , "partial"
           , "prelude"
           , "profunctor"
@@ -337,7 +335,7 @@ let additions =
           , "tuples"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-uplc-apply-args"
-        , version = "bec9cb629b652406dfac95b94cf384dce1cead32"
+        , version = "v2.0.0"
         }
       , cardano-types =
         { dependencies =
@@ -387,7 +385,7 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-types.git"
-        , version = "5fe759a6e3d77450b3998e46fbbc17deafc69613"
+        , version = "v5.0.0"
         }
       , cardano-message-signing =
         { dependencies =
@@ -413,7 +411,7 @@ let additions =
           , "uint"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-hd-wallet"
-        , version = "b3d1a8859d120bcdd5ba768efa6e5916a05a7400"
+        , version = "v2.0.0"
         }
       , cardano-transaction-builder =
         { dependencies =
@@ -442,7 +440,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-transaction-builder"
-        , version = "d6894849ca110e65c73df94c987d54a0ffb5ebfd"
+        , version = "v3.0.0"
         }
       , mote-testplan =
         { dependencies =
