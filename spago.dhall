@@ -23,6 +23,7 @@
     , "cardano-types"
     , "cardano-message-signing"
     , "cardano-hd-wallet"
+    , "cardano-transaction-balancer"
     , "cardano-transaction-builder"
     , "mote-testplan"
     , "cardano-provider"

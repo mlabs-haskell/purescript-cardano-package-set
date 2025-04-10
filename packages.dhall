@@ -413,6 +413,50 @@ let additions =
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-hd-wallet"
         , version = "v2.0.0"
         }
+      , cardano-transaction-balancer =
+        { dependencies =
+          [ "aff"
+          , "ansi"
+          , "arrays"
+          , "bifunctors"
+          , "bytearrays"
+          , "cardano-data-lite"
+          , "cardano-provider"
+          , "cardano-transaction-builder"
+          , "cardano-types"
+          , "console"
+          , "effect"
+          , "either"
+          , "exceptions"
+          , "foldable-traversable"
+          , "integers"
+          , "js-bigints"
+          , "js-date"
+          , "lattice"
+          , "lists"
+          , "literals"
+          , "maybe"
+          , "monad-logger"
+          , "newtype"
+          , "ordered-collections"
+          , "parallel"
+          , "partial"
+          , "prelude"
+          , "profunctor"
+          , "profunctor-lenses"
+          , "quickcheck"
+          , "random"
+          , "strings"
+          , "stringutils"
+          , "these"
+          , "transformers"
+          , "tuples"
+          , "uint"
+          , "unsafe-coerce"
+          ]
+        , repo = "https://github.com/mlabs-haskell/purescript-cardano-transaction-balancer"
+        , version = "v1.0.0"
+        }
       , cardano-transaction-builder =
         { dependencies =
           [ "aff"
@@ -468,19 +512,25 @@ let additions =
           , "aff-promise"
           , "affjax"
           , "argonaut-codecs"
+          , "arrays"
+          , "bifunctors"
           , "cardano-types"
-          , "console"
           , "effect"
           , "either"
+          , "exceptions"
+          , "foldable-traversable"
+          , "lists"
           , "maybe"
           , "newtype"
           , "ordered-collections"
           , "prelude"
           , "strings"
+          , "these"
+          , "tuples"
           , "uint"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-provider"
-        , version = "90e68dca60fbc14c6abfa9291a20b865f927338c"
+        , version = "v2.1.0"
         }
       , cardano-blockfrost-provider =
         { dependencies =
@@ -521,7 +571,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-blockfrost-provider"
-        , version = "8e8bfd14370b4af4507702a6220bc6a9213532ef"
+        , version = "v2.1.0"
         }
       , cardano-kupmios-provider =
         { dependencies =
@@ -531,7 +581,6 @@ let additions =
           , "arrays"
           , "bifunctors"
           , "bytearrays"
-          , "cardano-key-wallet"
           , "cardano-provider"
           , "cardano-data-lite"
           , "cardano-types"
@@ -548,7 +597,6 @@ let additions =
           , "integers"
           , "js-bigints"
           , "js-date"
-          , "lists"
           , "maybe"
           , "monad-logger"
           , "newtype"
@@ -561,7 +609,6 @@ let additions =
           , "strings"
           , "stringutils"
           , "tailrec"
-          , "these"
           , "transformers"
           , "tuples"
           , "uint"
@@ -569,7 +616,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider"
-        , version = "d08fc22de67ab9d24e9d20a3545228a5aaa5807f"
+        , version = "v2.1.0"
         }
       , cardano-ogmios-mempool =
         { dependencies =
@@ -600,7 +647,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-ogmios-mempool"
-        , version = "v1.0.0"
+        , version = "v1.1.0"
         }
       }
 
