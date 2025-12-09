@@ -584,6 +584,7 @@ let additions =
           , "cardano-provider"
           , "cardano-data-lite"
           , "cardano-types"
+          , "concurrent-queues"
           , "console"
           , "control"
           , "datetime"
@@ -616,7 +617,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider"
-        , version = "v2.1.0"
+        , version = "v3.0.0"
         }
       , cardano-ogmios-mempool =
         { dependencies =
