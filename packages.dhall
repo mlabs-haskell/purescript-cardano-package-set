@@ -214,7 +214,7 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-data-lite"
-        , version = "070a1a502472211853099c2566a7e9100a7b1a61"
+        , version = "v1.0.1"
         }
       , cardano-plutus-data-schema =
         { dependencies = [ "prelude" ]
