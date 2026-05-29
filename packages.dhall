@@ -551,11 +551,9 @@ let additions =
           , "exceptions"
           , "foldable-traversable"
           , "foreign-object"
-          , "heterogeneous"
           , "http-methods"
           , "js-bigints"
           , "js-date"
-          , "lists"
           , "maybe"
           , "media-types"
           , "monad-logger"
@@ -571,7 +569,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-blockfrost-provider"
-        , version = "v2.1.0"
+        , version = "v2.2.0"
         }
       , cardano-kupmios-provider =
         { dependencies =
