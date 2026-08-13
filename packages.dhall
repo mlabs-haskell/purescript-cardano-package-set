@@ -118,7 +118,7 @@ let additions =
           , "untagged-union"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cip30"
-        , version = "v1.0.1"
+        , version = "23d72a375017374bb67b44d56aa2c0be81218ff8"
         }
       , cip30-typesafe =
         { dependencies =
@@ -541,10 +541,9 @@ let additions =
           , "bifunctors"
           , "bignumber"
           , "bytearrays"
-          , "cardano-provider"
           , "cardano-data-lite"
+          , "cardano-provider"
           , "cardano-types"
-          , "control"
           , "datetime"
           , "effect"
           , "either"
@@ -561,6 +560,7 @@ let additions =
           , "numbers"
           , "ordered-collections"
           , "parallel"
+          , "partial"
           , "prelude"
           , "strings"
           , "transformers"
@@ -569,7 +569,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-blockfrost-provider"
-        , version = "v2.2.0"
+        , version = "v2.3.0"
         }
       , cardano-kupmios-provider =
         { dependencies =
@@ -615,7 +615,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider"
-        , version = "v3.0.0"
+        , version = "v3.1.0"
         }
       , cardano-ogmios-mempool =
         { dependencies =
