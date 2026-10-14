@@ -385,7 +385,7 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-types.git"
-        , version = "v5.0.0"
+        , version = "v5.1.0"
         }
       , cardano-message-signing =
         { dependencies =
@@ -455,7 +455,7 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-transaction-balancer"
-        , version = "v1.1.0"
+        , version = "v2.0.0"
         }
       , cardano-transaction-builder =
         { dependencies =
@@ -484,7 +484,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-transaction-builder"
-        , version = "v3.0.0"
+        , version = "v4.0.0"
         }
       , mote-testplan =
         { dependencies =
@@ -530,7 +530,7 @@ let additions =
           , "uint"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-provider"
-        , version = "v2.1.0"
+        , version = "v3.0.0"
         }
       , cardano-blockfrost-provider =
         { dependencies =
@@ -544,6 +544,7 @@ let additions =
           , "cardano-data-lite"
           , "cardano-provider"
           , "cardano-types"
+          , "console"
           , "datetime"
           , "effect"
           , "either"
@@ -557,6 +558,7 @@ let additions =
           , "media-types"
           , "monad-logger"
           , "newtype"
+          , "node-process"
           , "numbers"
           , "ordered-collections"
           , "parallel"
@@ -569,7 +571,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-blockfrost-provider"
-        , version = "v2.3.0"
+        , version = "v3.0.0"
         }
       , cardano-kupmios-provider =
         { dependencies =
@@ -599,6 +601,7 @@ let additions =
           , "maybe"
           , "monad-logger"
           , "newtype"
+          , "node-process"
           , "ordered-collections"
           , "parallel"
           , "partial"
@@ -615,7 +618,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider"
-        , version = "v3.1.0"
+        , version = "v4.0.0"
         }
       , cardano-ogmios-mempool =
         { dependencies =
