@@ -385,7 +385,7 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-types.git"
-        , version = "v5.1.0"
+        , version = "v5.1.1"
         }
       , cardano-message-signing =
         { dependencies =
@@ -455,7 +455,7 @@ let additions =
           , "unsafe-coerce"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-transaction-balancer"
-        , version = "v2.0.0"
+        , version = "v2.0.1"
         }
       , cardano-transaction-builder =
         { dependencies =
@@ -484,7 +484,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-transaction-builder"
-        , version = "v4.0.0"
+        , version = "v4.0.1"
         }
       , mote-testplan =
         { dependencies =
@@ -530,7 +530,7 @@ let additions =
           , "uint"
           ]
         , repo = "https://github.com/mlabs-haskell/purescript-cardano-provider"
-        , version = "v3.0.0"
+        , version = "v3.0.1"
         }
       , cardano-blockfrost-provider =
         { dependencies =
@@ -571,7 +571,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-blockfrost-provider"
-        , version = "v3.0.0"
+        , version = "v3.0.1"
         }
       , cardano-kupmios-provider =
         { dependencies =
@@ -618,7 +618,7 @@ let additions =
           ]
         , repo =
             "https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider"
-        , version = "v4.0.0"
+        , version = "v4.0.1"
         }
       , cardano-ogmios-mempool =
         { dependencies =
